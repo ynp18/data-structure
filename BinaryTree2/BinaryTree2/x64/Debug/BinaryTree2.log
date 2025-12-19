@@ -1,0 +1,4 @@
+﻿  test.c
+D:\github  code\data-structure\BinaryTree2\BinaryTree2\test.c(26,1): warning C4715: “BuyNode”: 不是所有的控件路径都返回值
+D:\github  code\data-structure\BinaryTree2\BinaryTree2\test.c(134,1): warning C4716: “BinaryTreeFind”: 必须返回一个值
+  BinaryTree2.vcxproj -> D:\github  code\data-structure\BinaryTree2\x64\Debug\BinaryTree2.exe

@@ -1,0 +1,4 @@
+﻿  test.c
+D:\Ctest\BinaryTree\BinaryTree\test.c(64,8): warning C4013: “time”未定义；假设外部返回 int
+D:\Ctest\BinaryTree\BinaryTree\test.c(136,2): warning C4098: “main”:“void”函数返回值
+  BinaryTree.vcxproj -> D:\Ctest\BinaryTree\x64\Debug\BinaryTree.exe

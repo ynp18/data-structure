@@ -128,9 +128,30 @@ int TreeLevelKSize(BTNode* root, int k)
 }
 
 
-BTNode* BinaryTreeFind(BTNode* root, BTDataTree x)
+//二叉树返回值为x的指针,如果有多个值为x的节点，就返回第一个找到的节点
+BTNode* TreeFind(BTNode* root, BTDataTree x)
 {
-
+	if (root == NULL)
+	{
+		return NULL;
+	}
+	if (root->data == x)
+	{
+		return root;
+	}
+	BTNode* ret1 = TreeFind(root->left, x);
+	if (ret1)
+	{
+		return ret1;
+	}
+	/*BTNode* ret2 = TreeFind(root->right, x);
+	if (ret2)
+	{
+		return ret2;
+	}
+	return NULL;*/
+	//代码优化
+	return TreeFind(root->right, x);
 }
 
 int main()
