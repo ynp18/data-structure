@@ -4,12 +4,19 @@
 void TestInsertSort()
 {
 	int a[] = { 2,3,4,5,1,4,5,8,9,8 };
-	InsertSort(a, 8);
+	InsertSort(a, 10);
+	PrintArray(a, sizeof(a) / sizeof(int));
+}
+
+void TestMergeSort()
+{
+	int a[] = { 2,3,4,5,1,4,5,8,9 };
+	MergeSortNonR(a, 9);
 	PrintArray(a, sizeof(a) / sizeof(int));
 }
 
 int main(void)
 {
-	TestInsertSort();
+	TestMergeSort();
 	return 0;
 }
