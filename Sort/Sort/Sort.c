@@ -46,12 +46,20 @@ void PrintArray(int* a, int n)
 //时间复杂度为O(N^2)，空间复杂度为O(1)
 void BubbleSort(int* a, int n)
 {
-	for (int i = 1; i < n; i++)
+	int exchange = 0;
+	for (int i = 0; i < n; i++)
 	{
-		if (a[i - 1] < a[i])
+		for (int j = 0; j < n - i - 1; j++)
 		{
-			Swap(&a[i - 1], &a[i]);
-
+			if (a[j] > a[j + 1])
+			{
+				exchange = 1;
+				swap(&a[j], &a[j + 1]);
+			}
+		}
+		if (exchange == 0)
+		{
+			break;
 		}
 	}
 }
